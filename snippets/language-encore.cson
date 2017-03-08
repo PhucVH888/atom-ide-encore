@@ -1,0 +1,43 @@
+'.source.enc':
+  'module':
+    'prefix': 'module'
+    'body': 'module $1'
+  'class':
+    'prefix': 'cl'
+    'body': 'class ${1:Main}\n\t$0\nend'
+  'if':
+    'prefix': 'if'
+    'body': 'if ${1:x==0}\nthen\n\t$2\nelse\n\t$0\nend'
+  'lambda function':
+    'prefix': 'fun'
+    'body': '\\\\ ($1) -> ${2:{${3:}\\}}$0\nend'
+  'var':
+    'prefix': 'var'
+    'body': 'var ${0:x} = ${1} \n'
+  'val':
+    'prefix': 'val'
+    'body': 'val ${0:x} = ${1} \n'
+  'main':
+    'prefix': 'main'
+    'body': 'class Main\n\tdef main() : void\n\t\t$0\nend'
+  'match':
+    'prefix': 'match'
+    'body': 'match $1 with\n\t${2:default} => $3\n$0\nend'
+  'method':
+    'prefix': 'def'
+    'body': 'def ${1:init}($2) : ${3:void}\n\t$0\nend'
+  'passive class':
+    'prefix': 'passive'
+    'body': 'passive class ${1:Main}\n\t$0\nend'
+  'print':
+    'prefix': 'print'
+    'body': 'print("$1"${2:, $3})$0\n'
+  'script header':
+    'prefix': '#!'
+    'body': '#! /usr/bin/env encorec -run$0'
+  'trait':
+    'prefix': 'trait'
+    'body': 'trait ${1:Bar}\n\t$0\nend'
+  'while':
+    'prefix': 'wh'
+    'body': 'while ${1:i > 0}\n\t$0\nend'

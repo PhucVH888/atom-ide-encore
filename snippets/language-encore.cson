@@ -28,13 +28,13 @@
     'body': 'fun ${0:x} => \n\t${1}\nend\n'
   'main':
     'prefix': 'main'
-    'body': 'class Main\n\tdef main() : void\n\t\t$0\nend'
+    'body': 'class Main\n\tdef main() : unit\n\t\t$0\nend'
   'match':
     'prefix': 'match'
     'body': 'match $1 with\n\t${2:default} => $3\n$0\nend'
   'method':
     'prefix': 'def'
-    'body': 'def ${1:init}($2) : ${3:void}\n\t$0\nend'
+    'body': 'def ${1:init}($2) : ${3:unit}\n\t$0\nend'
   'passive class':
     'prefix': 'passive'
     'body': 'passive class ${1:Main}\n\t$0\nend'
@@ -52,4 +52,4 @@
     'body': 'trait ${1:Bar}\n\t$0\nend'
   'while':
     'prefix': 'wh'
-    'body': 'while ${1:i > 0}\n\t$0\nend'
+    'body': 'while ${1:i > 0} do\n\t$0\nend'

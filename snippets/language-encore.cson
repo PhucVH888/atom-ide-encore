@@ -26,6 +26,9 @@
   'fun':
     'prefix': 'fun'
     'body': 'fun ${0:x} => \n\t${1}\nend\n'
+  'for':
+    'prefix': 'for'
+    'body': 'for ${0} <- ${1} do \n\t${2}\nend\n'
   'main':
     'prefix': 'main'
     'body': 'class Main\n\tdef main() : unit\n\t\t$0\nend'

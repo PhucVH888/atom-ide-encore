@@ -1,6 +1,6 @@
 {
   "name": "ide-encore",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "Syntax highlighting for the encore programming language 2017",
   "repository": "https://github.com/PhucVH888/atom-ide-encore",
   "license": "MIT",

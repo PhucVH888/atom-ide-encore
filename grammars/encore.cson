@@ -285,7 +285,7 @@
         'name': 'keyword.operator.future.enc'
       }
       {
-        'match': '\\b(let|in|end|var|val)\\b'
+        'match': '\\b(let|in|end|var|val|case|fun)\\b'
         'name': 'keyword.declaration.enc'
       }
       {

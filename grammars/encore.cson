@@ -326,7 +326,7 @@
         'name': 'storage.type.enc'
       }
       {
-        'match': '\\b(print)\\b'
+        'match': '\\b(print|println)\\b'
         'name': 'support.function.enc'
       }
     ]

@@ -54,7 +54,7 @@
     'prefix': 'print'
     'body': 'print("$1"${2:, $3})$0\n'
   'println':
-    'prefix': 'print'
+    'prefix': 'println'
     'body': 'println("$1"${2:, $3})$0\n'
   'script header':
     'prefix': '#!'

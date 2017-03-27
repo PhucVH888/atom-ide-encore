@@ -44,6 +44,9 @@
   'print':
     'prefix': 'print'
     'body': 'print("$1"${2:, $3})$0\n'
+  'println':
+    'prefix': 'print'
+    'body': 'println("$1"${2:, $3})$0\n'
   'script header':
     'prefix': '#!'
     'body': '#! /usr/bin/env encorec -run$0'

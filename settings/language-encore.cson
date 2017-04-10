@@ -1,5 +1,5 @@
 '.source.enc':
   'editor':
     'commentStart': '-- '
-    'increaseIndentPattern': '^.*((\\b(def|if|else|repeat|while|let|class|var|val|forward|break|continue|end|fun|case|do|require|module|where)\\b.*)|\\{[^}]*|\\([^)]*|^.*\\=\\s*$)$'
-    'decreaseIndentPattern': '^\\s*(\\}|\\))'
+    'increaseIndentPattern': '^.*((\\b(def|if|else|repeat|while|let|class|var|val|forward|break|continue|end|fun|case|do|require|module|where|active|linear|local|read|subord|borrowed)\\b.*)|\\{[^}]*|\\([^)]*|^.*\\=\\s*$)$'
+    'decreaseIndentPattern': '^\\s*(\\}|\\))|\\end'

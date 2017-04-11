@@ -6,3 +6,5 @@
 - Adds case, fun, actor keywords
 
 ## 0.1.3 - Adds module keyword
+
+## 0.3 - Adds kappa keywords

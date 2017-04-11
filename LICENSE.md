@@ -1,1 +1,1 @@
-Copyright (c) 2017 Phuc H. Vo
+Copyright (c) 2017 Huu-Phuc Vo

@@ -104,7 +104,7 @@
   'embed':
     'patterns': [
       {
-        'begin': '\\b(embed)\\s+([_$a-zA-Z][_$a-zA-Z0-9]*)\\b'
+        'begin': '\\b(EMBED)\\s+([_$a-zA-Z][_$a-zA-Z0-9]*)\\b'
         'beginCaptures':
           '0':
             'name': 'keyword.embed.enc'
@@ -178,7 +178,7 @@
            'name': 'storage.type.enc'
          '3':
            'name': 'entity.name.class.declaration'
-       'match': '\\b(passive\\s+)?(class|trait)\\s+([^\\s\\{<]+)'
+       'match': '\\b(passive\\s+)?(class|trait|active|read|local|borrowed|subord|linear)\\s+([^\\s\\{<]+)'
      }
      {
        'captures':

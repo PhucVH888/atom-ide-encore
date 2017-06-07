@@ -7,4 +7,6 @@
 
 ## 0.1.3 - Adds module keyword
 
-## 0.3 - Adds kappa keywords
+## 0.3.1 - Adds kappa keywords
+
+## 0.3.xx - Adds more keywords

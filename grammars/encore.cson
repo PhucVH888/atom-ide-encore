@@ -146,7 +146,7 @@
     'patterns': [
       {
         'comment': 'Storage types'
-        'match': '\\b(bool|char|real|int|uint|String|unit|Unit)\\b'
+        'match': '\\b(bool|char|real|int|uint|String|unit|Unit|sharable)\\b'
         'name': 'storage.type.enc'
       }
     ]
@@ -257,7 +257,7 @@
   'keywords':
     'patterns': [
       {
-        'match': '\\b(return)\\b'
+        'match': '\\b(return|eos)\\b'
         'name': 'keyword.control.flow.jump.enc'
       }
       {
@@ -326,7 +326,7 @@
         'name': 'storage.type.enc'
       }
       {
-        'match': '\\b(print|println)\\b'
+        'match': '\\b(print|println|yield)\\b'
         'name': 'support.function.enc'
       }
     ]

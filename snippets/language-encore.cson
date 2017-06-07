@@ -31,13 +31,16 @@
     'body': 'for ${0} <- ${1} do \n\t${2}\nend\n'
   'main':
     'prefix': 'main'
-    'body': 'class Main\n\tdef main() : unit\n\t\t$0\nend'
+    'body': 'active class Main\n\tdef main() : unit\n\t\t$0\nend'
   'match':
     'prefix': 'match'
     'body': 'match $1 with\n\t${2:default} => $3\n$0\nend'
-  'method':
+  'def':
     'prefix': 'def'
     'body': 'def ${1:init}($2) : ${3:unit}\n\t$0\nend'
+  'stream':
+    'prefix': 'stream'
+    'body': 'stream ${1:init}($2) : ${3:unit}\n\t$0\nend'
   'require':
     'prefix': 'require'
     'body': 'require def $0() : $1\n\t$2\nend'
@@ -59,6 +62,9 @@
   'subord class':
     'prefix': 'subord class'
     'body': 'subord class ${1:Main}\n\t$0\nend'
+  'yield':
+    'prefix': 'yield'
+    'body': 'yield("$1")$0\n'
   'print':
     'prefix': 'print'
     'body': 'print("$1"${2:, $3})$0\n'

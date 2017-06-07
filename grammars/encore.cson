@@ -163,6 +163,14 @@
      {
        'captures':
          '1':
+           'name': 'keyword.declaration.enc'
+         '2':
+           'name': 'entity.name.function.declaration'
+       'match': '(?x)\\b(stream|end)\\s+([_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\\s])(?=[(\\t ])|[_$a-zA-Z][_$a-zA-Z0-9]*)'
+     }
+     {
+       'captures':
+         '1':
            'name': 'keyword.require.enc'
          '2':
            'name': 'entity.name.val.declaration.require'
